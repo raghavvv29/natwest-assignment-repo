@@ -27,9 +27,9 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_instance" "web_server" {
-  ami           = data.aws_ami.amazon_linux.id
-  instance_type = var.instance_type
-  key_name      = var.key_name
+  ami             = data.aws_ami.amazon_linux.id
+  instance_type   = var.instance_type
+  key_name        = var.key_name
   security_groups = [aws_security_group.web_sg.name]
 
   user_data = file("${path.module}/httpd_setup_script.sh")
@@ -44,9 +44,9 @@ data "aws_ami" "amazon_linux" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-2.0.*-x86_64-*"] 
+    values = ["amzn2-ami-hvm-2.0.*-x86_64-*"]
   }
 
-  owners = ["137112412989"] 
+  owners = ["137112412989"]
 }
 
