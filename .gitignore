@@ -1,0 +1,14 @@
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+*.zip
+
+*.pem
+*.key
+*.secret
+
+.DS_Store
+.idea/
+.vscode/
+*.swp
