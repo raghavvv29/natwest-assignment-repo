@@ -1,0 +1,6 @@
+aws_region   = "ap-south-1"
+instance_type = "t2.micro"
+key_name      = "natwest-server-key"
+my_ip         = "116.75.77.183/32"
+bucket_name   = "natwest-assignment-bucket"
+lambda_function_name = "natwest-s3-event-log"
