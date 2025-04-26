@@ -25,7 +25,7 @@ jobs:
           terraform_version: 1.11.4
 
       - name: Terraform Init
-        run: terraform init -upgrade
+        run: terraform init
 
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
