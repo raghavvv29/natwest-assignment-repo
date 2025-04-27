@@ -2,13 +2,9 @@ import csv
 from collections import defaultdict
 
 def analyze_grades(csv_file_path, threshold):
-    """
-    Analyze a CSV file and print names of students whose average grade is above the threshold.
 
-    """
     student_grades = defaultdict(list)
 
-    # Read CSV
     with open(csv_file_path, 'r') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
